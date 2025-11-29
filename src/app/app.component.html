@@ -1,0 +1,539 @@
+<nav 
+[class.navbar-white]="isScrolled" id="navbar"
+class="fixed-top navbar navbar-expand-lg" id="navbar">
+    <div class="container">
+        <a class="navbar-brand d-lg-none m-0" href="#">
+            <img src="/assets/images/Screenshot_2025-11-21_114545-removebg-preview.png" alt="Gwa El Hala">
+        </a>
+        <button 
+        (click)="show=!show"
+        class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+        [class.show]='show'
+        class="collapse navbar-collapse justify-content-between" id="navbarSupportedContent">
+            <a class="navbar-brand d-none d-lg-inline-block" href="#">
+                <img src="/assets/images/Screenshot_2025-11-21_114545-removebg-preview.png" alt="Gwa El Hala">
+            </a>
+            <ul class="navbar-nav   mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a 
+                     [class.active]="activeLink === 'home'" 
+       (click)="setActive('home')"
+                    class="nav-link active" aria-current="page" href="#">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                    <a 
+                     [class.active]="activeLink === 'story'" 
+       (click)="setActive('story')"
+                    class="nav-link" aria-current="page" href="#story">قصتنا</a>
+                </li>
+                <li class="nav-item">
+                    <a 
+                        [class.active]="activeLink === 'page'" 
+       (click)="setActive('page')"
+                    class="nav-link" aria-current="page" href="#services">خدماتنا</a>
+                </li>
+                <li class="nav-item">
+                    <a 
+                    [class.active]="activeLink === 'impact'" 
+       (click)="setActive('impact')"
+                    class="nav-link" aria-current="page" href="#impact">أثرنا</a>
+                </li>
+                <li class="nav-item">
+                    <a 
+                      [class.active]="activeLink === 'opinions'" 
+       (click)="setActive('opinions')"
+                    class="nav-link" aria-current="page" href="#opinions">أراء العملاء</a>
+                </li>
+            </ul>
+            <a class="gray" href="https://wa.me/201152902139" target="_blank">
+                أطلب الان
+            </a>
+        </div>
+    </div>
+</nav>
+<section class="main">
+    <img src="/assets/images/Mask group.png" alt="Gwa El Hala" class="mask-one">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <div>
+                    <h1 class="text-center text-lg-end">طعم الأمل في كل <span>وجبة</span></h1>
+                    <p class="main-title text-center text-lg-end">خدمات تقديم طعام استثنائية بقلب اجتماعي. نحن ندرب
+                        ونوظف النساء
+                        المكفوفات ليصنعن أشهى الأطباق ويبنين مستقبلاً مشرقاً.</p>
+                    <div class="btns mb-5 justify-content-center justify-content-lg-start">
+                        <a href="https://wa.me/201152902139" target="_blank" class="orange">
+                            <i class="fa-regular fa-comment"></i>
+                            اطلب عبر واتساب
+                        </a>
+                        <a class="gray" href="#story">
+                            اكتشف قصتنا
+                        </a>
+                    </div>
+                    <ul 
+                    
+                    class="show statistics justify-content-center justify-content-lg-start">
+                        <li>
+                            <p class="counter1" data-target="30" #counter1>30+</p>
+                            <p>امرأة مدربة</p>
+                        </li>
+                        <li>
+                            <p class="counter2" data-target="102" #counter2>102+</p>
+                            <p>فعالية ناجحة</p>
+                        </li>
+                        <li>
+                            <p class="counter3" data-target="3" #counter3>3</p>
+                            <p>سنوات من العطاء</p>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="col-lg-4 d-none d-lg-block">
+                <div class="text-center">
+                    <img src="/assets/images/logo-03-03 (1) 1.png" class="img-fluid" alt="Gwa El Hala">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  -->
+<section class="our-story" id="story">
+    <div class="container">
+        <p class="sign">
+            <i class="fa-regular fa-star"></i>
+            قصتنا الملهمة
+        </p>
+        <h2>صوت عصفور غيّر حياتهن</h2>
+        <p class="title">
+            كيف بدأت رحلة جوا الحلة من مدريد إلى قلوب النساء المكفوفات
+        </p>
+        <div style="margin-bottom: 3rem;" class="row align-items-center">
+            <div class="col-lg-6">
+                <div>
+                    <iframe style="width: 100%;border-radius: 20px;" height="315"
+                        src="https://www.youtube.com/embed/-3CI4NPSpP8?si=A5GjUvOwa8sAo_1n" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="desc">
+                    <p>
+                        في أحد شوارع مدريد، سمعت
+                        <a class="orange">آنا وإسراء</a>
+                        صوت عصفور ينبعث من إشارة
+                        المرور. اكتشفتا أن هذا الصوت اللطيف يساعد المكفوفين على عبور الطريق
+                        بأمان.
+                    </p>
+                    <p>
+                        في تلك اللحظة، أدركتا أن
+                        <a class="green">الإبداع البسيط</a>
+                        يمكن أن يصنع فرقاً هائلاً في حياة الناس.
+                    </p>
+                    <div class="heart">
+                        <i class="fa-regular fa-heart"></i>
+                        <h3>"لماذا لا نخلق فرصاً حقيقية للنساء المكفوفات؟"</h3>
+                        <p>من هذا السؤال، ولدت فكرة جوا الحلة - مشروع يدرب النساء المكفوفات على
+                            فنون الطهي ويوظفهن في خدمات تقديم الطعام الاحترافية.</p>
+                    </div>
+                    <p class="m-0">اليوم، نحن نفخر بتمكين النساء المكفوفات من بناء استقلاليتهن المالية
+                        واكتشاف مواهبهن، بينما نقدم لعملائنا أشهى الأطباق المعدة بحب وإتقان.</p>
+                </div>
+            </div>
+        </div>
+        <div style="margin-bottom: 3rem; " class="bg row align-items-center">
+            <div class="col-lg-6">
+                <div class="p-4">
+                    <h3>حين يجتمع الشغف بالإنسانية، يولد الأثر.</h3>
+                    <p>"من شغفٍ صادق ورؤيةٍ تؤمن بالإنسان، وُلدت جوا الحلة. نحن إيمان وإسراء، جمعنا بين الإحساس
+                        والاحتراف، لنخلق مطبخًا يطهى بالأمل، ويمنح النساء الكفيفات فرصةً لإثبات أن الضوء الحقيقي
+                        يبدأ من الداخل، وأن المذاق الأجمل هو أثر تُخلّفه يد تؤمن بنفسها."</p>
+                    <p>إيمان وإسراء الحسينى</p>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div class="text-center">
+                    <img src="/assets/images/WhatsApp-Image-2025-05-23-at-3.54.02-PM-768x1024.png" alt="Gwa El hala"
+                        class="img-fluid">
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6">
+                <div>
+                    <iframe style="width: 100%;border-radius: 20px;" height="315"
+                        src="https://www.youtube.com/embed/N9oPoyJXs7g?si=iqLHyHAbMhYVHot4" title="YouTube video player"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                        referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <div class="col-lg-6">
+                <div>
+                    <iframe
+                        src="https://www.facebook.com/plugins/video.php?height=314&href=https%3A%2F%2Fwww.facebook.com%2Fgowael7alla%2Fvideos%2F1923199084774860%2F&show_text=false&width=560&t=0"
+                        style="width: 100%;border-radius: 20px;overflow: hidden;border: none;" height="315"
+                        scrolling="no" frameborder="0" allowfullscreen="true"
+                        allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"
+                        allowFullScreen="true"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!--  -->
+<section class="our-impact" id="impact">
+    <div class="container">
+        <h2>أثرنا الاجتماعي</h2>
+        <p class="title">كل وجبة تطلبها تساهم في تغيير حياة امرأة وتحقيق حلمها</p>
+        <div class="row">
+            <article class="col-lg-6 mb-4">
+                <div>
+                    <div class="icon">
+                        <i class="fa-solid fa-user-group"></i>
+                    </div>
+                    <div class="desc">
+                        <h3>تدريب شامل</h3>
+                        <p>برنامج تدريبي احترافي يمكّن النساء المكفوفات من إتقان فنون
+                            الطهي والعمل باستقلالية</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-lg-6 mb-4">
+                <div>
+                    <div class="icon">
+                        <i class="fa-solid fa-medal"></i>
+                    </div>
+                    <div class="desc">
+                        <h3>توظيف كريم</h3>
+                        <p>فرص عمل حقيقية براتب عادل وبيئة داعمة تحترم قدراتهن وتحتفي
+                            بمواهبهن</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-lg-6 mb-4">
+                <div>
+                    <div class="icon">
+                        <i class="fa-solid fa-arrow-trend-up"></i>
+                    </div>
+                    <div class="desc">
+                        <h3>تمكين اقتصادي</h3>
+                        <p>مساعدة النساء على تحقيق الاستقلال المالي وبناء مستقبل أفضل
+                            لهن ولأسرهن</p>
+                    </div>
+                </div>
+            </article>
+            <article class="col-lg-6 mb-4">
+                <div>
+                    <div class="icon">
+                        <i class="fa-regular fa-heart"></i>
+                    </div>
+                    <div class="desc">
+                        <h3> تأثير مجتمعي</h3>
+                        <p>تغيير نظرة المجتمع وإلهام الآخرين لدعم ذوي الاحتياجات الخاصة</p>
+                    </div>
+                </div>
+            </article>
+        </div>
+        <div class="women">
+            <div style="position: relative;z-index: 2;">
+                <h3>معاً نصنع التغيير</h3>
+                <p>عندما تختار جوا الحلة، فإنك لا تحصل فقط على طعام شهي - بل تستثمر في حياة
+                    نساء شجاعات يبنين مستقبلهن بأيديهن.</p>
+            </div>
+            <div class="overlay"></div>
+        </div>
+    </div>
+</section>
+<!--  -->
+<section class="our-services" id="services">
+    <div class="container">
+        <div class="title">
+            <h2>خدماتنا المميزة</h2>
+            <p>نقدم مجموعة متنوعة من خدمات تقديم الطعام لجميع مناسباتك</p>
+        </div>
+        <div class="row">
+            <article class="col-lg-4 mb-5">
+                <div class="d-flex flex-column justify-content-between ">
+                    <div>
+                        <div class="icon"><i class="fa-solid fa-utensils"></i></div>
+                        <h3>الوجبات الجاهزة</h3>
+                        <p>وجبات متقنة، متوازنة، وصحية، تُعد يومياً بمعايير جودة عالية.</p>
+                        <ul>
+                            <li>أطباق تقليدية</li>
+                            <li>قوائم مخصصة</li>
+                            <li>خدمة احترافية</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/201152902139" target="_blank">اطلب عبر واتساب</a>
+                </div>
+            </article>
+            <!-- 1 -->
+            <article class="col-lg-4 mb-5">
+                <div class="d-flex flex-column justify-content-between ">
+                    <div>
+                        <div class="icon"><i class="fa-solid fa-user-group"></i></div>
+                        <h3>الوجبات شبه الجاهزة</h3>
+                        <p>تُقدَّم لعملائنا الراغبين في إعداد الطعام بسرعة دون التفريط في الطعم المنزلي الأصيل.</p>
+                        <ul>
+                            <li>بوفيه متنوع</li>
+                            <li>وجبات سريعة</li>
+                            <li>خدمة في الموقع</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/201152902139" target="_blank">اطلب عبر واتساب</a>
+                </div>
+            </article>
+            <!-- 2 -->
+            <article class="col-lg-4 mb-5">
+                <div class="d-flex flex-column justify-content-between ">
+                    <div>
+                        <div class="icon"><i class="fa-solid fa-user-group"></i></div>
+                        <h3>خدمات الكاترينج</h3>
+                        <p>قوائم طعام مخصصة لحفلات الأعراس، المناسبات الخاصة، والاحتفالات العائلية</p>
+                        <ul>
+                            <li>بوفيه متنوع</li>
+                            <li>وجبات سريعة</li>
+                            <li>خدمة في الموقع</li>
+                        </ul>
+                    </div>
+                    <a href="https://wa.me/201152902139" target="_blank">اطلب عبر واتساب</a>
+                </div>
+            </article>
+            <!-- 3 -->
+        </div>
+        <!--  -->
+        <div class="our-menu">
+            <h3>من قائمتنا المميزة</h3>
+            <div 
+            style="direction: ltr;"
+            class="">
+                <p-carousel
+                    [value]="menu"
+                    [numVisible]="3" [numScroll]="1" [circular]="false" [responsiveOptions]="responsive">
+                    <ng-template let-product pTemplate="item">
+                        <div>
+                            <img class="img-fluid" [src]="product.img" alt="Gwa El Hala">
+                        </div>
+                    </ng-template>
+                </p-carousel>
+            </div>
+
+        </div>
+        <div class="ready">
+            <h3>جاهزون لخدمتك</h3>
+            <p>تواصل معنا الآن عبر واتساب للحصول على استشارة مجانية وعرض سعر مخصص</p>
+            <a href="https://wa.me/201152902139" target="_blank">ابدأ طلبك الآن عبر واتساب</a>
+        </div>
+        <div class="our-clients" id="opinions">
+            <h3>كلمات عملائنا</h3>
+            <p>قصص نجاح من عملاء سعداء اختاروا جوا الحلة لمناسباتهم</p>
+        <div        style="direction: ltr;">
+
+     
+                       <p-carousel
+                
+                    [value]="[
+                        {des:'
+                                أطلب وجبات عائلية منهم بانتظام. الطعام يذكرني بطبخ أمي، محضّر بحب
+                                واهتمام. والأهم أنني أدعم نساء يستحقن كل تقدير.
+                                ',
+                        name:'سارة حسن',
+                        position:'ربة منزل'
+                        },
+                        {
+                            des:'
+                                خدمة رائعة وطعام شهي! الأهم من ذلك، أشعر بالفخر لأنني أدعم مبادرة إنسانية حقيقية.
+                                جودة الطعام احترافية وفريق العمل ملتزم جداً.
+                                ',
+                            name:'أحمد السيد',
+                            position:'منظم حفلات '
+                        },
+                          {
+                            des:'
+                                
+                                نطلب من جوة الحلة لكل اجتماعاتنا الكبيرة. الطعام دائماً طازج والتقديم احترافي.
+                                أعجبني جداً أن كل طلب يساهم في تمكين النساء.
+                                
+                                ',
+                            name:'نهي محمود',
+                            position:' مديرة موارد بشرية '
+                        },
+                           {
+                            des:'
+                                
+                                تعاملت معهم في حفل زفاف ابنتي. كان كل شيء مثالياً! الضيوف أشادوا بجودة الطعام، وأنا
+                                فخور بدعم مشروع له أثر اجتماعي حقيقي.
+                                
+                                ',
+                            name:'محمد عبدالله ',
+                            position:' صاحب شركة  '
+                        }
+                        ]"
+                    [numVisible]="2" [numScroll]="1" [circular]="false" [responsiveOptions]=" [
+            {
+                breakpoint: '1199px',
+                numVisible: 2,
+                numScroll: 1
+            },
+            {
+                breakpoint: '991px',
+                numVisible: 1,
+                numScroll: 1
+            },
+            {
+                breakpoint: '767px',
+                numVisible: 1,
+                numScroll: 1
+            }
+        ]">
+                    <ng-template let-product pTemplate="item">
+                            <div class="swiper-slide">
+                        <div>
+                            <div class="stars">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </div>
+                            <p class="desc">
+                                {{product.des}}
+                            </p>
+                            <hr>
+                            <p class="name">{{product.name}}</p>
+                            <p class="position"> {{product.position}}</p>
+                        </div>
+                    </div>
+                    </ng-template>
+                </p-carousel>   </div>
+       
+        </div>
+        <div class="opinions">
+                  <div        style="direction: ltr;">
+
+     
+                       <p-carousel
+                
+                    [value]="[
+                   {postUrl:'https://www.instagram.com/reel/C9E6S3ps88K/?igsh=eDlxaTNhdnV2cXUw',
+                   desc:' ابتدينا خطواتنا واحدة واحدة .:. أول ناس فكروا
+                                 يدربوا المكفوفين علي الطبخ ويشغلوهم
+                                كمان معاهم ويظهروا مواهبهم … ده احنا في جوا الحلة … محتاجين دعواتكم ودعمكم وكمان
+                                تشجيعكم … شجعوا معانا شيماء',
+                            },
+                    {postUrl:'https://www.instagram.com/reel/C8cMAwlMAyF/?igsh=enpxMjM0M3B2czNr',
+                   desc:'متوقعناش أول مرة نقدم فيها Event Catering ان الآراء تيجي إيجابية كدة … القادم أحلي وأجمد …  Amazing reviews from @nilepreneurs ❤️❤️❤️'                            },
+                       {postUrl:'https://www.instagram.com/reel/C7HeGI6sTOZ/?igsh=MTdjc2p3OXM3d3R1Ng==',
+                   desc:'We had a great day participating as an exhibitor @riseupsummit this year. 
+I hope that everyone had a great and delicious  #taste 
+
+Thank you all 
+@nilepreneurs'                            },
+ {postUrl:'https://www.instagram.com/reel/C7R103OMK3b/?igsh=MTRpdjNwNnc0ajcwYQ==',
+                   desc:'شهادة حق من م/عمرو حامد شريك مؤسس في شركة Landmark  لتصنيع البوتاجازات.. 
+من فاعليات @riseupsummit ❤️❤️'                            }
+                        ]"
+                    [numVisible]="3" [numScroll]="1" [circular]="false" [responsiveOptions]=" [
+            {
+                breakpoint: '1199px',
+                numVisible: 3,
+                numScroll: 1
+            },
+            {
+                breakpoint: '991px',
+                numVisible: 1,
+                numScroll: 1
+            },
+            {
+                breakpoint: '767px',
+                numVisible: 1,
+                numScroll: 1
+            }
+        ]">
+                    <ng-template let-product pTemplate="item">
+                        <div class="swiper-slide">
+    <div>
+                             <blockquote class="instagram-media" [attr.data-instgrm-permalink]="product.postUrl" data-instgrm-version="14" style="width:100%;"></blockquote>
+                                <p> {{product.desc}}
+                            </p>
+                        </div>
+                        </div>
+                    
+                    </ng-template>
+                </p-carousel>   </div>
+       
+        </div>
+    </div>
+</section>
+<!--  -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-4 mb-5">
+                <div>
+                    <img src="/assets/images/Mask group33.png" alt="Gwa El Hala">
+                    <p class="desc">خدمات تقديم طعام بقلب اجتماعي. ندرب ونوظف
+                        النساء المكفوفات لصنع أشهى الأطباق.</p>
+                    <div class="icons">
+                        <div>
+                            <a target="_blank"
+                                href="https://www.instagram.com/gowael7alla?utm_source=qr&igsh=d2ppajVoMDc0MnYy">
+                                <i class="fab fa-instagram"></i></a>
+
+                        </div>
+                        <div>
+                            <a href="https://www.facebook.com/gowael7alla?rdid=yvl5bmxl5xpwl71y&share_url=https%3A%2F%2Fwww.facebook.com%2Fshare%2F1KUY8XucJT%2F#"
+                                target="_blank">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-4 mb-5">
+                <div>
+                    <h2>روابط سريعة</h2>
+                    <ul>
+                        <li><a href="#story">قصتنا</a></li>
+                        <li><a href="#services">خدماتنا</a></li>
+                        <li><a href="https://wa.me/201152902139" target="_blank">اطلب الآن</a></li>
+                    </ul>
+                </div>
+            </div>
+            <!--  -->
+            <div class="col-lg-4 mb-5">
+                <div>
+                    <h2>تواصل معنا</h2>
+                    <ul>
+                        <li><a href="https://wa.me/201152902139" target="_blank">
+                                <i class="fas fa-phone-alt"></i>
+                                01152902139
+                            </a></li>
+                        <li><a href="mailto:infogowa-el7alla.com">
+                                <i class="fas fa-envelope"></i>
+                                infogowa-el7alla.com</a></li>
+                        <li><a href="">
+                                <i class="fas fa-map-marker-alt"></i>
+                                القاهرة، مصر</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <hr class="text-white">
+        <p class="copy mt-5 mb-3">
+            2025© جوا الحلة جميع الحقوق محفوظة.  
+        </p>
+        <p class="m-0 copy">
+            صُنع بحب لتمكين النساء المكفوفات وخدمة المجتمع
+        </p>
+    </div>
+</footer>
+<!--  --> 
