@@ -59,7 +59,7 @@ section.main {
     position: relative;
 
     min-height: 100vh;
-    background-image: url('/assets/images/Bg.png');
+    background-image: url('assets/images/Bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -263,7 +263,7 @@ section.our-story div.heart p {
 }
 
 section.our-story .bg {
-    background-image: url('/assets/images/bg2.png');
+    background-image: url('assets/images/bg2.png');
     background-color: #F9A11C;
     border-radius: 20px;
     padding: 0 20px;
@@ -377,7 +377,7 @@ section.our-impact .women {
     position: relative;
     border-radius: 12px;
     overflow: hidden;
-    background-image: url('/assets/images/women.png');
+    background-image: url('assets/images/women.png');
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
