@@ -11,7 +11,7 @@ import { CarouselModule } from 'primeng/carousel';
 })
 export class AppComponent {
   title = 'gwaa-el7alla';
-  menu = [{img:'/assets/images/Container.png'},{img:'/assets/images/Container2.png'},{img:'/assets/images/Container3.png'} ]
+  menu = [{img:'assets/images/Container.png'},{img:'assets/images/Container2.png'},{img:'assets/images/Container3.png'} ]
   responsive = [
             {
                 breakpoint: '1199px',
