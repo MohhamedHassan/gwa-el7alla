@@ -774,5 +774,15 @@ footer .copy {
 
 
 .p-carousel .p-carousel-indicators {
-    margin-top: 20px; /* المسافة بين Slides والشريط */
-}
+    margin-top: 20px; 
+} 
+.overlayhover {
+    overflow: hidden;
+    &:hover {
+        .overlay {
+        left: -100% !important;
+        right: auto !important;
+     }
+    }
+} 
+ 
