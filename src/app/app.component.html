@@ -333,9 +333,8 @@ class="fixed-top navbar navbar-expand-lg" id="navbar">
                     [value]="menu"
                     [numVisible]="3" [numScroll]="1" [circular]="false" [responsiveOptions]="responsive">
                     <ng-template let-product pTemplate="item">
-                        <div>
-                            <img 
-                            style="height: 300px;object-fit: cover;text-align: center;width: 90%;border-radius: 10px;"
+                        <div class="h-100 d-flex justify-content-center align-items-center">
+                            <img  
                               [src]="product.img" alt="Gwa El Hala">
                         </div>
                     </ng-template>
